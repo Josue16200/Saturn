@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn</title>
+    <link rel="icon" href="img/saturnLogoPNG.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home">
+        <img src="img/saturnLogoPNG.png" class="saturn" onclick="saturn()">
+        <h1 class="title">SATURN</h1>
+        <div class="o">
+            <img src="img/icone_indefinido.jpg" class="usuer">
+        </div>
+            <div class="hame">
+                <div id="home">
+                    <h4 class="log" onclick="Pag()" id="meio1">Acceso</h4>
+                    <h4 class="cad" onclick="pag()" id="meio2">Registro</h4>
+                </div>
+            </div>
+    </div>
+    <div class="conta">
+        <div class="login">
+            <form action="">
+                <label  class="nomeLog">Nombre de usuario:</label><br><input type="text" required><br><br>
+                <label class="email">Correo electrónico:</label><br><input type="email" required><br><br>
+                <label class="senha">Contraseña:</label><br><input type="password" required><br><br>
+                <button class="logar" onclick="login()">iniciar sesión</button>
+            </form>
+        </div>
+        <div class="cadastro">
+            <form action="">
+                <label class="nomeCad">Nombre de usuario:</label><br><input placeholder="Exemplo: Saturn" required><br><br>
+                <label class="senha">Contraseña:</label><br><input type="password" placeholder="Exemplo: Saturn123" required><br><br>
+                <label class="confirm">Confirmación de contraseña</label><br><input type="password" required><br><br>
+                <button class="cadastrar" onclick="cadastro()">Registrar</button>
+            </form>
+        </div>
+    </div>
+        
+
+    <div class="produtos">
+        <a href="acto.html"><button id="iaActo"></button></a>
+        <p style="font-size:30px;">Acto I.A.</p>
+        <p style="font-size: 15px; color: gray;">El Acto I.A. es una inteligencia artificial que admite ...</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
