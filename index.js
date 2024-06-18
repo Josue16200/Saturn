@@ -1,5 +1,5 @@
-var loginPag = document.querySelector(".login");
-var cadastroPag = document.querySelector(".cadastro");
+var loginPag = document.querySelector(".login")
+var cadastroPag = document.querySelector(".cadastro")
 var meio = document.querySelector("#meio1")
 var MEIO = document.querySelector('#meio2')
 var conta = document.querySelector('.conta')
@@ -41,4 +41,22 @@ function saturn(){
         cadastroPag.style.display = 'none'
         hame.style.animation = "fechamento 1s"
     } 
+}
+
+function assinatura(){
+    var assinatura = document.querySelector('.assinatura')
+    if(assinatura.style.display != 'block'){
+        assinatura.style.display = 'block'
+        assinatura.style.animation = 'assinatura 1s'
+    }else{
+        assinatura.style.display = 'none'
+    }
+}
+function comprar(){
+    var comprar = document.querySelector('.pagamento')
+    if(comprar.style.display != 'block'){
+        comprar.style.display = 'block'
+    }else{
+        comprar.style.display = 'none'
+    }
 }

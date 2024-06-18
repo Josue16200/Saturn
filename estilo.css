@@ -1,0 +1,14 @@
+select{
+    height:50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+label{
+    font-size: 25px;
+}
+input{
+    height:30px;
+    border-radius: 10px;
+    width: 40%;
+    margin-left:-3%;
+}

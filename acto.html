@@ -6,6 +6,7 @@
     <title>Acto - Saturn</title>
     <link rel="icon" href="img/saturnLogoPNG.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div class="home">
@@ -17,15 +18,67 @@
         <img src="img/ia.jfif" class="ia_imgUm">
         <h1 class="actoUm">Acto I.A.</h1>
         <p class="descricaoDois">El Acto I.A. es una inteligencia artificial que admite audio, vídeo, fotografía/imagen y gifs.
-            <br>Teniendo una inteligencia más avanzada que el chat GPT de Openai, casi superior a la de Albert Einstein.
-            <br>Se puede instalar en cualquier máquina, incluyendo computadora, teléfono celular y tableta.
+            <br>Teniendo una inteligencia más avanzada que el chat GPT de Openai.
+            <br>Se puede instalar en cualquier máquina, incluyendo computadora, teléfono celular y tablet.
         </p>
         <div class="precos">
-            <p>Precio de suscripción:</p>
+            <p style="margin-top: 10%;">Precio de suscripción:</p>
             <p style="color: rgb(125, 0, 0); position: absolute; margin-top: 0px;"><strike>R$99,99</strike></p>
             <p style="margin-left: 70px;">R$39,99</p>
         </div>
         <button class="comprar" onclick="comprar()">Comprar suscripción</button>
+        <button class="comprarUm" onclick="assinatura()">Ver suscripción</button>
        </div>
+
+       <div class="assinatura">
+        <h1 class="assin">SUSCRIPCIÓN PREMIUM</h1>
+        <img src="img/Este_é_um_vetor_de_logotipo_verificado_feito_com_malha_3d_realista___Vetor_Premium-removebg-preview.png" style="height: 150px; position:absolute; padding-left: 20px; padding-top: 2.5%; animation: premium 2s infinite;">
+            <ul style="padding-left: 210px; font-size: 20px;">
+                <li id="um">Hablas como si fuera un verdadero ser humano.</li>
+                <br>
+                <li id="dois">Un assistente virtual que responde asiste al usuario mediante Voice Match.<br>(solo para celular o tablet)</li>
+                <br>
+                <li id="tres">tiene control sobre componentes electrónicos inteligentes cuando se configura.</li>
+            </ul>
+    </div>
+<div class="pagamento">
+    <form>
+        <label style="margin-left: 7.7%;">Forma de pago:</label>
+    <br>
+    <select required style="margin-left: 4%;">
+        <option>Elige la forma de pago...</option>
+        <option>Crédito</option>
+        <option>Débito</option>
+        <option>Pix</option>
+        <option>Boleto</option>
+    </select><br><br>
+    <label>Nombre Completo:</label>
+    <br>
+    <input type="text" required><br><br>
+    <label>Número do tarjeta:</label><br>
+    <input type="number" placeholder="Máximo 16 digitos" minlenght="1" maxlength="16"><br><br>
+    <label style="margin-left: -20px;">fecha de caducidad de la tarjeta:</label><br>
+    <input type="text" placeholder="MM/AA" minlength="1" maxlength="5"><br><br>
+    <label>CVC:</label><br>
+    <input type="number" minlength="1" maxlength="3"><br><br>
+    <label>Dirección 1:</label><br>
+    <input type="text" required placeholder="Ex: Rua Nossa Senhora Aparecida, Xique-xique BA"><br><br>
+    <label>Dirección 2 (opcional):</label><br>
+    <input type="text"><br><br>
+    <label>Email:</label><br>
+    <input type="email" placeholder="Ex: SantaRica@gmail.com"><br><br>
+    <label>Número de Teléfono:</label><br>
+    <input type="tel" required placeholder="Ex: (55) 6787-0985 "><br><br>
+    <label>País:</label><br>
+    <input type="text" required placeholder="Ex: México"><br><br>
+    <label>Estado:</label><br>
+    <input type="text" placeholder="Ex: Rio Grande do Sul"><br><br>
+    <label>Cidade:</label><br>
+    <input type="text" placeholder="Ex: Buenos Aires"><br><br>
+
+    <button type="submit" class="pagar">Pagar</button>
+    </form>
+</div>
+    <script src="index.js"></script>
 </body>
 </html>
